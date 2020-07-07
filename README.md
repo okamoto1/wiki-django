@@ -1,3 +1,3 @@
-# wiki-django
-wiki using django, project from CS50W
-https://cs50.harvard.edu/web/2020/projects/1/wiki/
+## wiki-django
+#Project from CS50W
+A Wikipedia-like online encyclopedia, using django.
