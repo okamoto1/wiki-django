@@ -12,6 +12,11 @@ h1 {
     padding-top: 20px;
 }
 
+h2 {
+  margin-top: 11px;
+  padding-top: 0px;
+}
+
 textarea {
     height: 90vh;
     width: 80%;
@@ -35,4 +40,8 @@ textarea {
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+#header{
+  color: #33adff;
 }
