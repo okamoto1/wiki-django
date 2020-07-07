@@ -14,7 +14,15 @@ def index(request):
 
 def wiki(request, title):
     markdowner = Markdown()
+    acumulador = []
     if util.get_entry(title) == None:
+        for titles in util.list_entries():
+            if titles[0:len(title)].lower() == title.lower():
+                acumulador.append(titles)
+        if acumulador:
+            return render(request, "encyclopedia/index.html", {
+                "entries": acumulador
+            })
         raise Http404("Title does not exist")
     markdown = markdowner.convert(util.get_entry(title))
     return render(request, "encyclopedia/entry.html", {
